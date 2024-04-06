@@ -1,0 +1,84 @@
+:root {
+    --space: 3rem;
+    --shadow: 0 .5em 1em 1em rgba(0, 0, 0, 0.25);
+    --primary: #836FFF;
+    --secondary: #15F5BA;
+}
+
+main {
+    background-color: var(--primary);
+    display: flex;
+    gap: var(--space);
+    padding: var(--space);
+    min-height: 100vh;
+    font-size: 1.5rem;
+}
+
+main > article {
+    background-color: white;
+    padding: var(--space);
+    box-shadow: var(--shadow);
+    flex-grow: 1;
+}
+
+.cart > section {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+}
+
+.cart img {
+    width: 100%;
+}
+
+.quantity, .subtotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout > div, .quantity > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quantity > h3 > a{
+    color: black;
+}
+
+.quantity > h3 > a:hover {
+    text-decoration: underline;
+}
+
+.checkout > div {
+    gap: 1rem;
+}
+
+.price-subtotal, .price-total {
+    color: var(--secondary);
+}
+
+.price-total {
+    font-size: 2em;
+}
+
+.cart-remove, .cart-checkout {
+    display: flex;
+    align-items: center;
+    border: none;
+    font-size: 1em;
+}
+
+.cart-remove {
+    background: none;
+    color: red;
+}
+
+.cart-checkout {
+    background-color: #488D28;
+    color: white;
+    padding: .1em 1em;
+    border-radius: .5em;
+}

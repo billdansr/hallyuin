@@ -1,0 +1,71 @@
+:root {
+    --space: 3rem;
+    --primary: #836FFF;
+    --secondary: #15F5BA;
+    --shadow: 0 .5em 1em 1em rgba(0, 0, 0, 0.25);
+}
+
+main {
+    background-color: var(--primary);
+    padding: var(--space);
+    font-size: 1.5rem;
+}
+
+main > article {
+    background-color: white;
+    padding: var(--space);
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+
+main > article > div {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-evenly;
+    gap: var(--space);
+}
+
+main > article > div > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+main > article > div > article > div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+main > article > div > article > a {
+    color: black;
+    text-decoration: none;
+}
+
+main > article > div > article > a:hover {
+    text-decoration: underline;
+}
+
+main > article > div > article > a > img {
+    width: 50%;
+}
+
+.price {
+    color: var(--secondary);
+    font-size: 1em;
+}
+
+.add-cart {
+    background-color: #488D28;
+    color: white;
+    border: none;
+    border-radius: .4em;
+    padding: .1rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    font-size: 1em;
+}
